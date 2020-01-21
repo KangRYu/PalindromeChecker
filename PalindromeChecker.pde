@@ -13,6 +13,7 @@ public void setup()
       println(lines[i] + " is NOT a palindrome.");
     }
   }
+  println(reverse("TEST"));
 }
 public boolean palindrome(String word)
 {
@@ -22,7 +23,9 @@ public boolean palindrome(String word)
 public String reverse(String str)
 {
     String sNew = new String();
-    //your code here
+    for(int i = str.length() - 1; i >= 0; i--) {
+      sNew += String.valueOf(str.charAt(i));
+    }
     return sNew;
 }
 
