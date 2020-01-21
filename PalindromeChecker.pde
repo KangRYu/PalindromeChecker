@@ -16,6 +16,7 @@ public void setup()
 }
 public boolean palindrome(String word)
 {
+  word = toLowerCase(word);
   if(reverse(word).equals(word)) {
     return true;
   }
@@ -31,5 +32,5 @@ public String reverse(String str)
 }
 public String noCapitals(String str)
 {
-  
+  return String.toLowerCase(str);
 }
