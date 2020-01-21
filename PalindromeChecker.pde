@@ -13,11 +13,12 @@ public void setup()
       println(lines[i] + " is NOT a palindrome.");
     }
   }
-  println(reverse("TEST"));
 }
 public boolean palindrome(String word)
 {
-  //your code here
+  if(reverse(word).equals(word)) {
+    return true;
+  }
   return false;
 }
 public String reverse(String str)
@@ -28,5 +29,7 @@ public String reverse(String str)
     }
     return sNew;
 }
-
-
+public String noCapitals(String str)
+{
+  
+}
